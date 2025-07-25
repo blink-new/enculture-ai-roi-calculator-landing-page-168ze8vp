@@ -34,11 +34,11 @@ function App() {
             {/* Desktop Navigation */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
-                <a href="#" className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">Science</a>
-                <a href="#" className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">Pricing</a>
-                <a href="#" className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">About us</a>
-                <a href="#" className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">Contact us</a>
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white">Book a demo</Button>
+                <a href="#" className="text-gray-900 hover:text-[#7D60EE] px-3 py-2 text-sm font-medium">Science</a>
+                <a href="#" className="text-gray-900 hover:text-[#7D60EE] px-3 py-2 text-sm font-medium">Pricing</a>
+                <a href="#" className="text-gray-900 hover:text-[#7D60EE] px-3 py-2 text-sm font-medium">About us</a>
+                <a href="#" className="text-gray-900 hover:text-[#7D60EE] px-3 py-2 text-sm font-medium">Contact us</a>
+                <Button className="bg-[#7D60EE] hover:bg-[#6B4FE8] text-white">Book a demo</Button>
               </div>
             </div>
 
@@ -46,7 +46,7 @@ function App() {
             <div className="md:hidden">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="text-gray-900 hover:text-blue-600"
+                className="text-gray-900 hover:text-[#7D60EE]"
               >
                 {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
@@ -58,11 +58,11 @@ function App() {
         {mobileMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-              <a href="#" className="text-gray-900 hover:text-blue-600 block px-3 py-2 text-base font-medium">Science</a>
-              <a href="#" className="text-gray-900 hover:text-blue-600 block px-3 py-2 text-base font-medium">Pricing</a>
-              <a href="#" className="text-gray-900 hover:text-blue-600 block px-3 py-2 text-base font-medium">About us</a>
-              <a href="#" className="text-gray-900 hover:text-blue-600 block px-3 py-2 text-base font-medium">Contact us</a>
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white w-full mt-4">Book a demo</Button>
+              <a href="#" className="text-gray-900 hover:text-[#7D60EE] block px-3 py-2 text-base font-medium">Science</a>
+              <a href="#" className="text-gray-900 hover:text-[#7D60EE] block px-3 py-2 text-base font-medium">Pricing</a>
+              <a href="#" className="text-gray-900 hover:text-[#7D60EE] block px-3 py-2 text-base font-medium">About us</a>
+              <a href="#" className="text-gray-900 hover:text-[#7D60EE] block px-3 py-2 text-base font-medium">Contact us</a>
+              <Button className="bg-[#7D60EE] hover:bg-[#6B4FE8] text-white w-full mt-4">Book a demo</Button>
             </div>
           </div>
         )}
@@ -75,14 +75,14 @@ function App() {
             <h1 className="text-4xl md:text-6xl font-bold text-black mb-6">
               Calculate the ROI of
               <br />
-              <span className="text-blue-600">Culture Transformation</span>
+              <span className="text-[#7D60EE]">Culture Transformation</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
               Discover how much your organization can save and gain by building a culture that drives results. 
               Get instant insights into turnover reduction, productivity gains, and measurable business impact.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg">
+              <Button size="lg" className="bg-[#7D60EE] hover:bg-[#6B4FE8] text-white px-8 py-4 text-lg">
                 <Calculator className="mr-2 h-5 w-5" />
                 Calculate Your ROI
               </Button>
@@ -193,13 +193,13 @@ function App() {
 
             {/* Results */}
             <div className="space-y-6">
-              <Card className="p-6 bg-blue-50 border-blue-200">
+              <Card className="p-6 bg-purple-50 border-purple-200">
                 <div className="flex items-center justify-between">
                   <div>
                     <h3 className="text-lg font-semibold text-black">Total Annual ROI</h3>
-                    <p className="text-3xl font-bold text-blue-600">${totalROI.toLocaleString()}</p>
+                    <p className="text-3xl font-bold text-[#7D60EE]">${totalROI.toLocaleString()}</p>
                   </div>
-                  <TrendingUp className="h-12 w-12 text-blue-600" />
+                  <TrendingUp className="h-12 w-12 text-[#7D60EE]" />
                 </div>
               </Card>
 
@@ -243,7 +243,7 @@ function App() {
                 </div>
               </Card>
 
-              <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 text-lg">
+              <Button className="w-full bg-[#7D60EE] hover:bg-[#6B4FE8] text-white py-4 text-lg">
                 Get Detailed ROI Report
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -266,7 +266,7 @@ function App() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="p-8 text-center">
-              <DollarSign className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <DollarSign className="h-12 w-12 text-[#7D60EE] mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-black mb-4">Reduce Turnover Costs</h3>
               <p className="text-gray-600">
                 Every employee who leaves costs 75% of their annual salary to replace. 
@@ -284,7 +284,7 @@ function App() {
             </Card>
 
             <Card className="p-8 text-center">
-              <BarChart3 className="h-12 w-12 text-purple-600 mx-auto mb-4" />
+              <BarChart3 className="h-12 w-12 text-[#7D60EE] mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-black mb-4">Data-Driven Decisions</h3>
               <p className="text-gray-600">
                 Make culture transformation measurable with advanced analytics, 
@@ -306,7 +306,7 @@ function App() {
             potential for growth and improvement.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg">
+            <Button size="lg" className="bg-[#7D60EE] hover:bg-[#6B4FE8] text-white px-8 py-4 text-lg">
               Get Culture Health Check-up
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black px-8 py-4 text-lg">
@@ -329,24 +329,24 @@ function App() {
             <div>
               <h4 className="font-semibold text-black mb-4">Product</h4>
               <ul className="space-y-2 text-gray-600">
-                <li><a href="#" className="hover:text-blue-600">Science</a></li>
-                <li><a href="#" className="hover:text-blue-600">Pricing</a></li>
-                <li><a href="#" className="hover:text-blue-600">ROI Calculator</a></li>
+                <li><a href="#" className="hover:text-[#7D60EE]">Science</a></li>
+                <li><a href="#" className="hover:text-[#7D60EE]">Pricing</a></li>
+                <li><a href="#" className="hover:text-[#7D60EE]">ROI Calculator</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold text-black mb-4">Company</h4>
               <ul className="space-y-2 text-gray-600">
-                <li><a href="#" className="hover:text-blue-600">About us</a></li>
-                <li><a href="#" className="hover:text-blue-600">Careers</a></li>
-                <li><a href="#" className="hover:text-blue-600">Contact</a></li>
+                <li><a href="#" className="hover:text-[#7D60EE]">About us</a></li>
+                <li><a href="#" className="hover:text-[#7D60EE]">Careers</a></li>
+                <li><a href="#" className="hover:text-[#7D60EE]">Contact</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold text-black mb-4">Legal</h4>
               <ul className="space-y-2 text-gray-600">
-                <li><a href="#" className="hover:text-blue-600">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-blue-600">Terms & Conditions</a></li>
+                <li><a href="#" className="hover:text-[#7D60EE]">Privacy Policy</a></li>
+                <li><a href="#" className="hover:text-[#7D60EE]">Terms & Conditions</a></li>
               </ul>
             </div>
           </div>
